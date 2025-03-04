@@ -2,7 +2,6 @@ function refreshWeather(response) {
   let tempElement = document.querySelector("#temp-value");
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#city-input");
-  let emojiElement = document.querySelector("#temp-emoji");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");

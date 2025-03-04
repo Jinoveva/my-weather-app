@@ -19,11 +19,11 @@ html {
 
 .container {
   display: block;
-  margin: 60px auto;
+  margin: 30px auto;
   background: #fff0f5;
   width: 40%;
   height: auto;
-  padding: 80px;
+  padding: 50px;
   border-radius: 20px;
 }
 
@@ -42,6 +42,10 @@ input {
   background: #db1360;
   color: white;
 }
+#submit-input:hover {
+  cursor: pointer;
+  background: #fadadd;
+}
 hr {
   opacity: 0.06;
   margin: 20px;
@@ -55,15 +59,24 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
 }
 .details {
   max-width: 50%;
 }
+.weather-app-icon {
+  width: 88px;
+  height: 88px;
+}
 .temperature {
+  max-width: 50%;
+}
+#temp-emoji {
+  top: -25px;
+}
+#temp-value {
   font-size: 60px;
   font-weight: 900;
-  max-width: 50%;
 }
 .temp-unit {
   position: relative;
