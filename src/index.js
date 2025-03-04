@@ -2,8 +2,23 @@ function refreshWeather(response) {
   let tempElement = document.querySelector("#temp-value");
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#city-input");
+  let emojiElement = document.querySelector("#temp-emoji");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+
   cityElement.innerHTML = response.data.city;
   tempElement.innerHTML = `${temperature}`;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = response.data.temperature.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  if (temperature <= 10) {
+    emojiElement.innerHTML = "❄️";
+  } else if (temperature > 10 && temperature <= 15) {
+    emojiElement.innerHTML = "🌤";
+  } else {
+    emojiElement.innerHTML = "☀️";
+  }
 }
 
 function searchCity(city) {
