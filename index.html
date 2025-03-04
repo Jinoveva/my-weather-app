@@ -4,23 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="src/index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
   <body>
-    <footer>
-      This page was coded by
-      <a
-        href="https://www.shecodes.io/graduates/122713-jinoveva-lopes"
-        target="_blank"
-        >Jinoveva Lopes</a
-      >
-      and is open-sourced on
-      <a href="https://github.com/Jinoveva/my-weather-app" target="_blank"
-        >Github</a
-      >
-      and
-      <a href="https://jinoveva-weather-app.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <video
+      src="src/background-vid.mp4"
+      autoplay
+      muted
+      loop
+      id="background-vid"
+    ></video>
+    <div class="container">
+      <form class="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          class="search-input"
+        />
+        <input type="submit" value="Search" class="submit-input" />
+      </form>
+      <hr />
+      <main>
+        <div class="current-weather">
+          <div class="details">
+            <h1>City</h1>
+            <p>
+              Day Hrs:Mins, condition <br />
+              Humidity: <strong class="unit">-%</strong>, Wind:
+              <strong class="unit">-km/h</strong>
+            </p>
+          </div>
+          <div class="temperature">🌡 --<span class="temp-unit">°C</span></div>
+        </div>
+      </main>
+      <hr />
+      <footer>
+        This page was coded by
+        <a
+          href="https://www.shecodes.io/graduates/122713-jinoveva-lopes"
+          target="_blank"
+          >Jinoveva Lopes</a
+        >
+        and is open-sourced on
+        <a href="https://github.com/Jinoveva/my-weather-app" target="_blank"
+          >Github</a
+        >
+        and
+        <a href="https://jinoveva-weather-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>

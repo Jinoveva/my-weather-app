@@ -1,0 +1,85 @@
+#background-vid {
+  position: fixed; /* Fixed position to stay behind content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make sure it covers the entire screen */
+  z-index: -1; /* Position the video behind all other content */
+}
+
+/* Ensure the body and html take the full height */
+body,
+html {
+  font-family: "Roboto", serif;
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.container {
+  display: block;
+  margin: 60px auto;
+  background: #fff0f5;
+  width: 40%;
+  height: auto;
+  padding: 80px;
+  border-radius: 20px;
+}
+
+input {
+  padding: 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  border-style: none;
+}
+
+.search-input {
+  width: 80%;
+  background: #fadadd;
+}
+.submit-input {
+  background: #db1360;
+  color: white;
+}
+hr {
+  opacity: 0.06;
+  margin: 30px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.details {
+  max-width: 50%;
+}
+.temperature {
+  font-size: 60px;
+  font-weight: 900;
+  max-width: 50%;
+}
+.temp-unit {
+  position: relative;
+  top: -25px;
+  font-weight: normal;
+  font-size: 20px;
+}
+.unit {
+  color: #885df1;
+}
+
+footer,
+p {
+  color: grey;
+}
+
+a {
+  color: #db1360;
+}
