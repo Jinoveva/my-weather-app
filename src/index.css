@@ -34,17 +34,17 @@ input {
   border-style: none;
 }
 
-.search-input {
+#search-input {
   width: 80%;
   background: #fadadd;
 }
-.submit-input {
+#submit-input {
   background: #db1360;
   color: white;
 }
 hr {
   opacity: 0.06;
-  margin: 30px;
+  margin: 20px;
 }
 h1 {
   font-size: 40px;

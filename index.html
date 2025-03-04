@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="src/index.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
@@ -19,25 +20,27 @@
     ></video>
     <div class="container">
       <form class="search-form">
-        <input
-          type="search"
-          placeholder="Enter a city..."
-          class="search-input"
-        />
-        <input type="submit" value="Search" class="submit-input" />
+        <input type="search" placeholder="Enter a city..." id="search-input" />
+        <input type="submit" value="Search" id="submit-input" />
       </form>
       <hr />
       <main>
         <div class="current-weather">
           <div class="details">
-            <h1>City</h1>
+            <h1 id="city-input">City</h1>
             <p>
-              Day Hrs:Mins, condition <br />
+              <span id="current-day">Day</span>
+              <span id="current-hours">Hrs</span>:<span id="current-minutes"
+                >Mins</span
+              >, condition <br />
               Humidity: <strong class="unit">-%</strong>, Wind:
               <strong class="unit">-km/h</strong>
             </p>
           </div>
-          <div class="temperature">🌡 --<span class="temp-unit">°C</span></div>
+          <div class="temperature">
+            <span id="temp-emoji">🌡</span> <span id="temp-value">--</span>
+            <span class="temp-unit">°C</span>
+          </div>
         </div>
       </main>
       <hr />
@@ -58,5 +61,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
